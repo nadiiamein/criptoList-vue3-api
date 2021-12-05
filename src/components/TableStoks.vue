@@ -1,52 +1,24 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{ msg: string }>()
-
-const count = ref(0)
-</script>
-
 <template>
-  <h1>{{ msg }}</h1>
-
-  <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-    +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-  </p>
-
-  <p>See <code>README.md</code> for more information.</p>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Docs
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-  </p>
-
-  <button type="button" @click="count++">count is: {{ count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <div class="list">
+    <div class="list-item">
+      <div class="list-item__info">
+        <div class="list-item__cover">
+          <img src="../assets/logo" alt="Logo Co">
+        </div>
+        <h3 class="list-item__title">
+          dder
+          <span>dder</span>
+        </h3>
+      </div>
+      <span class="list-item__price">4342</span>
+    </div>
+  </div>
 </template>
 
-<style scoped>
-a {
-  color: #42b983;
-}
 
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
+<script setup lang="ts">
 
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
-</style>
+</script>
+
+
+
