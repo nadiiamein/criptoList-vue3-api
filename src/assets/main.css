@@ -1,0 +1,51 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 300px;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.list-item {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+.list-item__info {
+    display: flex;
+    align-items: center;
+}
+.list-item__cover {
+    flex: 0 0 30px;
+    margin-right: 15px;
+}
+.list-item__cover img {
+    width: 100%;
+}
+.list-item__title {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.list-item__title span {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777;
+    margin-top: 3px;
+}
+.list-item__price {
+    flex: 0 0 80px;
+    text-align: right;
+}
+.info {
+    margin-top: 20px;
+}
